@@ -20,7 +20,7 @@
 \usepackage{array}                  % required for boldface tabular columns
 \usepackage{ifthen}
 
-
+\nofiles                            % .aux files are not needed for resumes
 \pagestyle{empty}                   % resumes do not need page numbers
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
