@@ -30,19 +30,47 @@ jobs:
       - name: Fix PDF metadata
         run: |
           pip install pikepdf
-          python3 -c "
-          import pikepdf
+          python3 << 'PYEOF'
+          import pikepdf, os
+
           pdf = pikepdf.open('cv-source/cv.pdf')
+
+          # Print existing metadata for debugging
+          print("=== BEFORE ===")
+          for k, v in pdf.docinfo.items():
+              print(f"  DocInfo {k}: {v}")
+          if '/Metadata' in pdf.Root:
+              print("  XMP stream exists")
+
+          # Step 1: Delete ALL existing docinfo
+          for key in list(pdf.docinfo.keys()):
+              del pdf.docinfo[key]
+
+          # Step 2: Remove XMP metadata stream entirely
+          if '/Metadata' in pdf.Root:
+              del pdf.Root['/Metadata']
+
+          # Step 3: Set fresh docinfo only
+          pdf.docinfo['/Title'] = pikepdf.String('Stella Yeayeun Park - CV')
+          pdf.docinfo['/Author'] = pikepdf.String('Stella Yeayeun Park')
+
+          # Step 4: Create fresh XMP
           with pdf.open_metadata() as meta:
               meta['dc:title'] = 'Stella Yeayeun Park - CV'
               meta['dc:creator'] = ['Stella Yeayeun Park']
-          pdf.docinfo['/Title'] = 'Stella Yeayeun Park - CV'
-          pdf.docinfo['/Author'] = 'Stella Yeayeun Park'
+
           pdf.save('cv-source/cv_fixed.pdf')
           pdf.close()
-          import os
+
+          # Verify
+          pdf2 = pikepdf.open('cv-source/cv_fixed.pdf')
+          print("=== AFTER ===")
+          for k, v in pdf2.docinfo.items():
+              print(f"  DocInfo {k}: {v}")
+          pdf2.close()
+
           os.replace('cv-source/cv_fixed.pdf', 'cv-source/cv.pdf')
-          "
+          PYEOF
 
       - name: Commit compiled PDF
         run: |
