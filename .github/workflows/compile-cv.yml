@@ -29,8 +29,20 @@ jobs:
 
       - name: Fix PDF metadata
         run: |
-          sudo apt-get install -y exiftool
-          exiftool -Title="Stella Yeayeun Park - CV" -Author="Stella Yeayeun Park" -overwrite_original cv-source/cv.pdf
+          pip install pikepdf
+          python3 -c "
+          import pikepdf
+          pdf = pikepdf.open('cv-source/cv.pdf')
+          with pdf.open_metadata() as meta:
+              meta['dc:title'] = 'Stella Yeayeun Park - CV'
+              meta['dc:creator'] = ['Stella Yeayeun Park']
+          pdf.docinfo['/Title'] = 'Stella Yeayeun Park - CV'
+          pdf.docinfo['/Author'] = 'Stella Yeayeun Park'
+          pdf.save('cv-source/cv_fixed.pdf')
+          pdf.close()
+          import os
+          os.replace('cv-source/cv_fixed.pdf', 'cv-source/cv.pdf')
+          "
 
       - name: Commit compiled PDF
         run: |
