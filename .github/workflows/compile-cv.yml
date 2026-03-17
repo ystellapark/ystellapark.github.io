@@ -1,0 +1,36 @@
+name: Compile CV from LaTeX
+
+on:
+  push:
+    paths:
+      - 'cv-source/main.tex'
+      - 'cv-source/resume.cls'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: cv-source
+
+      - name: Rename output PDF
+        run: |
+          mv cv-source/main.pdf cv-source/cv.pdf
+
+      - name: Commit compiled PDF
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add cv-source/cv.pdf
+          git diff --staged --quiet || git commit -m "Auto-compile CV PDF from LaTeX"
+          git push
