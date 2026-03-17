@@ -54,6 +54,8 @@
   \addressskip
 }
 
+\AtBeginDocument{\pdfinfo{/Title (Stella Yeayeun Park - CV) /Author (Stella Yeayeun Park)}}
+
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
