@@ -1,5 +1,5 @@
 /* ============================================
-   Stella Yeayeun Park — Academic Website
+   Stella Yeayeun Park â€” Academic Website
    Matching Google Sites aesthetic exactly
    ============================================ */
 
@@ -52,9 +52,9 @@ a:hover {
   text-decoration: none;
 }
 .site-brand .brand-logo {
-  height: 140px;
+  height: 160px;
   width: auto;
-  margin: -40px 0;
+  margin: -48px 0;
   object-fit: contain;
 }
 
@@ -99,11 +99,23 @@ a:hover {
   height: 18px;
 }
 
+/* Hamburger button â€” hidden on desktop */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #5f6368;
+  line-height: 1;
+}
+
 /* --- Page Container --- */
 .page-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 36px 24px 80px;
+  padding: 32px 24px 80px;
 }
 
 /* --- Page Title (Research, CV) --- */
@@ -120,16 +132,17 @@ a:hover {
 /* --- Home Page --- */
 .home-hero {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .home-hero h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  white-space: nowrap;
 }
 .home-hero .subtitle {
   font-family: 'Times New Roman', Times, serif;
@@ -141,12 +154,12 @@ a:hover {
 
 .home-content {
   display: flex;
-  gap: 36px;
+  gap: 24px;
   align-items: flex-start;
 }
 .home-photo {
   flex-shrink: 0;
-  width: 300px;
+  width: 340px;
 }
 .home-photo img {
   width: 100%;
@@ -368,32 +381,174 @@ a:hover {
   margin-top: 60px;
 }
 
-/* --- Responsive --- */
+/* --- Search Overlay --- */
+.search-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 200;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+.search-overlay.active {
+  display: flex;
+}
+.search-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 540px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+.search-box input:focus {
+  border-color: #1155cc;
+}
+.search-results {
+  margin-top: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.search-results a {
+  display: block;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #000;
+}
+.search-results a:hover {
+  background: #f5f5f5;
+}
+.search-results .result-title {
+  font-weight: 600;
+  color: #1155cc;
+  font-size: 15px;
+}
+.search-results .result-snippet {
+  font-size: 13px;
+  color: #555;
+  margin-top: 2px;
+}
+.search-results .no-results {
+  padding: 12px 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* --- Responsive (Mobile) --- */
 @media (max-width: 700px) {
   .site-header {
-    padding: 8px 16px;
-    flex-wrap: wrap;
-    gap: 10px;
+    padding: 6px 12px;
+    min-height: 48px;
+  }
+
+  /* Show hamburger, hide nav links by default */
+  .hamburger-btn {
+    display: block;
+    order: -1;
+  }
+
+  .site-brand {
+    flex: 1;
+    justify-content: center;
   }
   .site-brand .brand-logo {
-    height: 80px;
-    margin: -20px 0;
+    height: 90px;
+    margin: -22px 0;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 8px 0;
+    z-index: 99;
+  }
+  .site-nav.open {
+    display: flex;
   }
   .site-nav a {
-    padding: 5px 10px;
-    font-size: 13px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
   }
+  .site-nav a.active {
+    background: #3c4043;
+    color: #fff;
+    border-radius: 0;
+  }
+  .site-nav .nav-search {
+    padding: 10px 20px;
+    justify-content: flex-start;
+  }
+
+  /* Right-side search icon in header (mobile) */
+  .mobile-search-btn {
+    display: block;
+  }
+
   .page-container {
-    padding: 28px 16px 60px;
+    padding: 20px 16px 60px;
   }
+
+  .home-hero {
+    margin-bottom: 20px;
+  }
+  .home-hero h1 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+  }
+  .home-hero .subtitle {
+    font-size: 12px;
+  }
+
+  .page-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
   .home-content {
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
   }
   .home-photo {
-    width: 180px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
   }
+  .home-photo img {
+    width: 100%;
+    display: block;
+  }
+
+  .home-bio p {
+    font-size: 14px;
+  }
+  .home-bio .contact-line {
+    font-size: 14px;
+  }
+
   .cv-embed-container iframe {
     height: 600px;
   }
@@ -404,5 +559,25 @@ a:hover {
   .cv-entry .cv-date {
     width: auto;
     font-weight: 500;
+  }
+}
+
+/* Mobile search button (magnifying glass in header) */
+.mobile-search-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #5f6368;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+}
+.mobile-search-btn svg {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 700px) {
+  .mobile-search-btn {
+    display: block;
   }
 }
