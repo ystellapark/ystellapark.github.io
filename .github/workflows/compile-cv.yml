@@ -27,6 +27,11 @@ jobs:
         run: |
           mv cv-source/main.pdf cv-source/cv.pdf
 
+      - name: Fix PDF metadata
+        run: |
+          sudo apt-get install -y exiftool
+          exiftool -Title="Stella Yeayeun Park - CV" -Author="Stella Yeayeun Park" -overwrite_original cv-source/cv.pdf
+
       - name: Commit compiled PDF
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
