@@ -52,10 +52,11 @@ a:hover {
   text-decoration: none;
 }
 .site-brand .brand-logo {
-  height: 160px;
+  height: 140px;
   width: auto;
   margin: -48px 0;
   object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .site-nav {
