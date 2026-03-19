@@ -178,9 +178,11 @@ a:hover {
   text-align: justify;
 }
 .home-bio .contact-line {
+  margin-top: 6px;
+}
+
+.home-bio .contact-line:first-of-type {
   margin-top: 16px;
-  font-size: 15px;
-  line-height: 1.5;
 }
 .home-bio .contact-line strong {
   font-weight: 700;
