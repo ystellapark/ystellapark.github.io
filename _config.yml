@@ -1,0 +1,18 @@
+title: Stella Yeayeun Park
+description: Academic website of Stella Yeayeun Park, Assistant Professor of Accounting at Sogang Business School, Sogang University.
+url: "https://ystellapark.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - SETUP-GUIDE.md
+  - cv-source/main.tex
+  - cv-source/resume.cls
