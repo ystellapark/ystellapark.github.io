@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ystellapark.github.io/sitemap.xml
