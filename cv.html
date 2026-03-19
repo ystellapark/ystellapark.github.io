@@ -1,204 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV — Stella Yeayeun Park</title>
-  <!-- Times New Roman is a system font, no external fonts needed -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: CV
+nav: cv
+description: Curriculum Vitae of Stella Yeayeun Park.
+---
 
-  <header class="site-header">
-    <button class="hamburger-btn" aria-label="Menu" onclick="toggleNav()">&#9776;</button>
-    <a href="index.html" class="site-brand">
-      <img src="assets/sogang-logo.png" alt="Sogang University" class="brand-logo">
-    </a>
-    <button class="mobile-search-btn" aria-label="Search" onclick="openSearch()">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-    </button>
-    <nav class="site-nav" id="siteNav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="cv.html" class="active">CV</a>
-      <span class="nav-search" onclick="openSearch()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></span>
-    </nav>
-  </header>
+<h1 class="page-title">CV</h1>
 
-  <!-- Search Overlay -->
-  <div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
-    <div class="search-box" onclick="event.stopPropagation()">
-      <input type="text" id="searchInput" placeholder="Search this site" oninput="doSearch(this.value)">
-      <div class="search-results" id="searchResults"></div>
+<!-- PDF download link -->
+<p style="text-align:center; margin-bottom: 32px;">
+  <a href="cv-source/cv.pdf" class="download-cv" download="StellaYPark_CV_Mar2026.pdf" target="_blank">Download PDF version</a>
+</p>
+
+<!-- HTML CV -->
+<div class="cv-html">
+
+  <div class="cv-header-block">
+    <h2>Stella Yeayeun Park</h2>
+    <div class="cv-contact">
+      <a href="mailto:yeayeunpark@sogang.ac.kr">yeayeunpark@sogang.ac.kr</a><br>
+      35 Baekbeom-ro, Mapo-gu, Seoul, Korea
     </div>
   </div>
 
-  <main class="page-container">
-
-    <h1 class="page-title">CV</h1>
-
-    <!-- PDF download link -->
-    <p style="text-align:center; margin-bottom: 32px;">
-      <a href="cv-source/cv.pdf" download="StellaYPark_CV_Mar2026.pdf" target="_blank">Download CV</a>
-    </p>
-
-    <!-- HTML CV -->
-    <div class="cv-html">
-
-      <div class="cv-header-block">
-        <h2>Stella Yeayeun Park</h2>
-        <div class="cv-contact">
-          <a href="mailto:yeayeunpark@sogang.ac.kr">yeayeunpark@sogang.ac.kr</a><br>
-          35 Baekbeom-ro, Mapo-gu, Seoul, Korea
-        </div>
+  <!-- Academic Employment -->
+  <div class="cv-section">
+    <div class="cv-section-title">Academic Employment</div>
+    <div class="cv-entry">
+      <div class="cv-date">2025 –</div>
+      <div class="cv-detail">
+        <strong>Sogang University</strong><br>
+        <div class="cv-sub">Assistant Professor of Accounting</div>
       </div>
-
-      <!-- Academic Employment -->
-      <div class="cv-section">
-        <div class="cv-section-title">Academic Employment</div>
-        <div class="cv-entry">
-          <div class="cv-date">2025 –</div>
-          <div class="cv-detail">
-            <strong>Sogang University</strong><br>
-            <div class="cv-sub">Assistant Professor of Accounting</div>
-          </div>
-        </div>
-        <div class="cv-entry">
-          <div class="cv-date">2021 – 2025</div>
-          <div class="cv-detail">
-            <strong>Singapore Management University</strong><br>
-            <div class="cv-sub">Assistant Professor of Accounting</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Education -->
-      <div class="cv-section">
-        <div class="cv-section-title">Education</div>
-        <div class="cv-entry">
-          <div class="cv-date">2016 – 2021</div>
-          <div class="cv-detail">
-            <strong>The Wharton School of the University of Pennsylvania</strong><br>
-            <div class="cv-sub">Ph.D. in Accounting</div>
-            <div class="cv-sub"><em>(Committee: Christopher Armstrong, Mirko Heinle, Robert Holthausen, Christopher Ittner (Chair))</em></div>
-          </div>
-        </div>
-        <div class="cv-entry">
-          <div class="cv-date">2010 – 2014</div>
-          <div class="cv-detail">
-            <strong>Swarthmore College</strong><br>
-            <div class="cv-sub">B.A. in Computer Science</div>
-            <div class="cv-sub">B.A. in Economics</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Publications -->
-      <div class="cv-section">
-        <div class="cv-section-title">Publications</div>
-        <p style="font-size:14.5px; line-height:1.65;">
-          Armstrong, C., Glaeser, S., Park, S.Y. and Timmermans, O. (2026), The Assignment of Intellectual Property Rights and Innovation. <em>Journal of Accounting Research</em>. <a href="https://doi.org/10.1111/1475-679x.70035" target="_blank">https://doi.org/10.1111/1475-679x.70035</a>
-        </p>
-      </div>
-
-      <!-- Working Papers -->
-      <div class="cv-section">
-        <div class="cv-section-title">Working Papers</div>
-        <ul class="cv-item-list">
-          <li>
-            "Do Retail Flows Explain the Overnight-Intraday Return Gap?" with Youngkil Ahn, Don Noh, and Alfred Qi Fan
-            <span class="status">Revise &amp; Resubmit at Journal of Financial and Quantitative Analysis</span>
-          </li>
-          <li>"Disclosure and Competition for Limited Investor Resources" with Catherine Schrand and Frank Zhou</li>
-          <li>"Chinese Government Financing and Financial Reporting Quality" with Yanduo Chen and Yue Heng</li>
-          <li>"Is Disclosure Priced Ex-Ante?" with Jeremy Michels</li>
-          <li>"Complex Disclosures and Investor Divergence at Earnings Announcements" Solo-authored</li>
-        </ul>
-      </div>
-
-      <!-- Professional Activities -->
-      <div class="cv-section">
-        <div class="cv-section-title">Professional Activities</div>
-
-        <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Invited Conferences / Presentations</p>
-        <table class="cv-table">
-          <tr><td class="cv-year">2025</td><td>EAA Congress 2025, KAA</td></tr>
-          <tr><td class="cv-year">2024, 2025</td><td>Hawaii Accounting Research Conference</td></tr>
-          <tr><td class="cv-year">2024</td><td>Sogang University</td></tr>
-          <tr><td class="cv-year">2024</td><td>University of Melbourne, Kiwoom Securities Co.</td></tr>
-          <tr><td class="cv-year">2023</td><td>Quantitative Finance and Risk Analysis Symposium</td></tr>
-          <tr><td class="cv-year">2023</td><td>MIT Asia Conference</td></tr>
-          <tr><td class="cv-year">2023</td><td>KAIST</td></tr>
-          <tr><td class="cv-year">2021 – 2023</td><td>SOAR Accounting Symposium</td></tr>
-          <tr><td class="cv-year">2022 – 2024</td><td>Tri-Uni Accounting Research Conference</td></tr>
-          <tr><td class="cv-year">2022</td><td>SOAR Research Summer Camp</td></tr>
-          <tr><td class="cv-year">2021</td><td>Singapore Management University</td></tr>
-          <tr><td class="cv-year">2021</td><td>Hong Kong University</td></tr>
-          <tr><td class="cv-year">2020 – 2021</td><td>Journal of Accounting and Economics Conference</td></tr>
-          <tr><td class="cv-year">2020</td><td>Cornell Financial Reporting Mini-Camp</td></tr>
-          <tr><td class="cv-year">2019</td><td>Wharton Accounting Spring Conference, Financial Accounting and Reporting Section Midyear Meeting (FARS), UNC Tax Doctoral Seminar</td></tr>
-          <tr><td class="cv-year">2018</td><td>Wharton INSEAD Doctoral Consortium, University of Colorado Summer Accounting Research Conference (paper invitation), Wharton Accounting Spring Conference</td></tr>
-          <tr><td class="cv-year">2017</td><td>Journal of Accounting and Economics Conference, Wharton Accounting Spring Conference</td></tr>
-          <tr><td class="cv-year">2016</td><td>Review of Accounting Studies Conference, Wharton Accounting Spring Conference, Conference on Quantitative Empirical Research on Management Accounting</td></tr>
-        </table>
-
-        <p style="font-weight:600; font-size:14.5px; margin: 20px 0 10px;">Ad Hoc Reviewer</p>
-        <table class="cv-table">
-          <tr><td class="cv-year">2024, 2018</td><td>Hawaii Accounting Research Conference (HARC)</td></tr>
-          <tr><td class="cv-year">2024, 2023</td><td>European Accounting Association</td></tr>
-          <tr><td class="cv-year">2023</td><td>The Accounting Review</td></tr>
-          <tr><td class="cv-year">2022</td><td>The Accounting Review</td></tr>
-          <tr><td class="cv-year">2021</td><td>FARS, HARC</td></tr>
-        </table>
-      </div>
-
-      <!-- Teaching -->
-      <div class="cv-section">
-        <div class="cv-section-title">Teaching</div>
-
-        <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Instructor</p>
-        <table class="cv-table">
-          <tr><td class="cv-year">2025</td><td>Managerial Accounting, Sogang University</td></tr>
-          <tr><td class="cv-year">2022 – 2025</td><td>Statistical Programming, Singapore Management University</td></tr>
-          <tr><td class="cv-year">2018</td><td>Managerial Accounting, Wharton School</td></tr>
-        </table>
-
-        <p style="font-weight:600; font-size:14.5px; margin: 20px 0 10px;">Teaching Assistant</p>
-        <table class="cv-table">
-          <tr><td class="cv-year">2017, 2020</td><td>Managerial Accounting, Wharton School</td></tr>
-          <tr><td class="cv-year">2017, 2019</td><td>EMBA Corporate Valuation (for Prof. Wayne Guay), Wharton School</td></tr>
-        </table>
-      </div>
-
-      <!-- Awards and Grants -->
-      <div class="cv-section">
-        <div class="cv-section-title">Awards and Grants</div>
-
-        <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Fellowships and Grants</p>
-        <table class="cv-table">
-          <tr><td class="cv-year">2022</td><td>Singapore Ministry of Education (MOE) Tier 1 Research Grant, Singapore Management University</td></tr>
-          <tr><td class="cv-year">2016 – 2021</td><td>Wharton School Fellowship for Doctoral Studies, Wharton School</td></tr>
-          <tr><td class="cv-year">2020</td><td>Jacobs Levy Equity Management Center Research Grant, Wharton School</td></tr>
-          <tr><td class="cv-year">2019</td><td>Mack Institute for Innovation Research Fellowship, Wharton School</td></tr>
-        </table>
-      </div>
-
-      <!-- Other Professional Experience -->
-      <div class="cv-section">
-        <div class="cv-section-title">Other Professional Experience</div>
-        <table class="cv-table">
-          <tr><td class="cv-year">2014 – 2016</td><td>Data Analyst, Samuel Zell Robert Lurie Real Estate Center, Wharton School</td></tr>
-          <tr><td class="cv-year">2015 – 2016</td><td>Research Assistant, Christopher Ittner and Jeremy Michels, Wharton School</td></tr>
-          <tr><td class="cv-year">2012</td><td>Intern, PricewaterhouseCoopers</td></tr>
-        </table>
-      </div>
-
-      <div class="cv-updated">Last Updated: March 2026</div>
-
     </div>
+    <div class="cv-entry">
+      <div class="cv-date">2021 – 2025</div>
+      <div class="cv-detail">
+        <strong>Singapore Management University</strong><br>
+        <div class="cv-sub">Assistant Professor of Accounting</div>
+      </div>
+    </div>
+  </div>
 
-  </main>
+  <!-- Education -->
+  <div class="cv-section">
+    <div class="cv-section-title">Education</div>
+    <div class="cv-entry">
+      <div class="cv-date">2016 – 2021</div>
+      <div class="cv-detail">
+        <strong>The Wharton School of the University of Pennsylvania</strong><br>
+        <div class="cv-sub">Ph.D. in Accounting</div>
+        <div class="cv-sub"><em>(Committee: Christopher Armstrong, Mirko Heinle, Robert Holthausen, Christopher Ittner (Chair))</em></div>
+      </div>
+    </div>
+    <div class="cv-entry">
+      <div class="cv-date">2010 – 2014</div>
+      <div class="cv-detail">
+        <strong>Swarthmore College</strong><br>
+        <div class="cv-sub">B.A. in Computer Science</div>
+        <div class="cv-sub">B.A. in Economics</div>
+      </div>
+    </div>
+  </div>
 
-  <script src="search.js"></script>
-</body>
-</html>
+  <!-- Publications -->
+  <div class="cv-section">
+    <div class="cv-section-title">Publications</div>
+    <p style="font-size:14.5px; line-height:1.65;">
+      Armstrong, C., Glaeser, S., Park, S.Y. and Timmermans, O. (2026), The Assignment of Intellectual Property Rights and Innovation. <em>Journal of Accounting Research</em>. <a href="https://doi.org/10.1111/1475-679x.70035" target="_blank">https://doi.org/10.1111/1475-679x.70035</a>
+    </p>
+  </div>
+
+  <!-- Working Papers -->
+  <div class="cv-section">
+    <div class="cv-section-title">Working Papers</div>
+    <ul class="cv-item-list">
+      <li>
+        "Do Retail Flows Explain the Overnight-Intraday Return Gap?" with Youngkil Ahn, Don Noh, and Alfred Qi Fan
+        <span class="status">Revise &amp; Resubmit at Journal of Financial and Quantitative Analysis</span>
+      </li>
+      <li>"Disclosure and Competition for Limited Investor Resources" with Catherine Schrand and Frank Zhou</li>
+      <li>"Chinese Government Financing and Financial Reporting Quality" with Yanduo Chen and Yue Heng</li>
+      <li>"Is Disclosure Priced Ex-Ante?" with Jeremy Michels</li>
+      <li>"Complex Disclosures and Investor Divergence at Earnings Announcements" Solo-authored</li>
+    </ul>
+  </div>
+
+  <!-- Professional Activities -->
+  <div class="cv-section">
+    <div class="cv-section-title">Professional Activities</div>
+
+    <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Invited Conferences / Presentations</p>
+    <table class="cv-table">
+      <tr><td class="cv-year">2025</td><td>EAA Congress 2025, KAA</td></tr>
+      <tr><td class="cv-year">2024, 2025</td><td>Hawaii Accounting Research Conference</td></tr>
+      <tr><td class="cv-year">2024</td><td>Sogang University</td></tr>
+      <tr><td class="cv-year">2024</td><td>University of Melbourne, Kiwoom Securities Co.</td></tr>
+      <tr><td class="cv-year">2023</td><td>Quantitative Finance and Risk Analysis Symposium</td></tr>
+      <tr><td class="cv-year">2023</td><td>MIT Asia Conference</td></tr>
+      <tr><td class="cv-year">2023</td><td>KAIST</td></tr>
+      <tr><td class="cv-year">2021 – 2023</td><td>SOAR Accounting Symposium</td></tr>
+      <tr><td class="cv-year">2022 – 2024</td><td>Tri-Uni Accounting Research Conference</td></tr>
+      <tr><td class="cv-year">2022</td><td>SOAR Research Summer Camp</td></tr>
+      <tr><td class="cv-year">2021</td><td>Singapore Management University</td></tr>
+      <tr><td class="cv-year">2021</td><td>Hong Kong University</td></tr>
+      <tr><td class="cv-year">2020 – 2021</td><td>Journal of Accounting and Economics Conference</td></tr>
+      <tr><td class="cv-year">2020</td><td>Cornell Financial Reporting Mini-Camp</td></tr>
+      <tr><td class="cv-year">2019</td><td>Wharton Accounting Spring Conference, Financial Accounting and Reporting Section Midyear Meeting (FARS), UNC Tax Doctoral Seminar</td></tr>
+      <tr><td class="cv-year">2018</td><td>Wharton INSEAD Doctoral Consortium, University of Colorado Summer Accounting Research Conference (paper invitation), Wharton Accounting Spring Conference</td></tr>
+      <tr><td class="cv-year">2017</td><td>Journal of Accounting and Economics Conference, Wharton Accounting Spring Conference</td></tr>
+      <tr><td class="cv-year">2016</td><td>Review of Accounting Studies Conference, Wharton Accounting Spring Conference, Conference on Quantitative Empirical Research on Management Accounting</td></tr>
+    </table>
+
+    <p style="font-weight:600; font-size:14.5px; margin: 20px 0 10px;">Ad Hoc Reviewer</p>
+    <table class="cv-table">
+      <tr><td class="cv-year">2024, 2018</td><td>Hawaii Accounting Research Conference (HARC)</td></tr>
+      <tr><td class="cv-year">2024, 2023</td><td>European Accounting Association</td></tr>
+      <tr><td class="cv-year">2023</td><td>The Accounting Review</td></tr>
+      <tr><td class="cv-year">2022</td><td>The Accounting Review</td></tr>
+      <tr><td class="cv-year">2021</td><td>FARS, HARC</td></tr>
+    </table>
+  </div>
+
+  <!-- Teaching -->
+  <div class="cv-section">
+    <div class="cv-section-title">Teaching</div>
+
+    <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Instructor</p>
+    <table class="cv-table">
+      <tr><td class="cv-year">2025</td><td>Managerial Accounting, Sogang University</td></tr>
+      <tr><td class="cv-year">2022 – 2025</td><td>Statistical Programming, Singapore Management University</td></tr>
+      <tr><td class="cv-year">2018</td><td>Managerial Accounting, Wharton School</td></tr>
+    </table>
+
+    <p style="font-weight:600; font-size:14.5px; margin: 20px 0 10px;">Teaching Assistant</p>
+    <table class="cv-table">
+      <tr><td class="cv-year">2017, 2020</td><td>Managerial Accounting, Wharton School</td></tr>
+      <tr><td class="cv-year">2017, 2019</td><td>EMBA Corporate Valuation (for Prof. Wayne Guay), Wharton School</td></tr>
+    </table>
+  </div>
+
+  <!-- Awards and Grants -->
+  <div class="cv-section">
+    <div class="cv-section-title">Awards and Grants</div>
+
+    <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Fellowships and Grants</p>
+    <table class="cv-table">
+      <tr><td class="cv-year">2022</td><td>Singapore Ministry of Education (MOE) Tier 1 Research Grant, Singapore Management University</td></tr>
+      <tr><td class="cv-year">2016 – 2021</td><td>Wharton School Fellowship for Doctoral Studies, Wharton School</td></tr>
+      <tr><td class="cv-year">2020</td><td>Jacobs Levy Equity Management Center Research Grant, Wharton School</td></tr>
+      <tr><td class="cv-year">2019</td><td>Mack Institute for Innovation Research Fellowship, Wharton School</td></tr>
+    </table>
+  </div>
+
+  <!-- Other Professional Experience -->
+  <div class="cv-section">
+    <div class="cv-section-title">Other Professional Experience</div>
+    <table class="cv-table">
+      <tr><td class="cv-year">2014 – 2016</td><td>Data Analyst, Samuel Zell Robert Lurie Real Estate Center, Wharton School</td></tr>
+      <tr><td class="cv-year">2015 – 2016</td><td>Research Assistant, Christopher Ittner and Jeremy Michels, Wharton School</td></tr>
+      <tr><td class="cv-year">2012</td><td>Intern, PricewaterhouseCoopers</td></tr>
+    </table>
+  </div>
+
+  <div class="cv-updated">Last Updated: March 2026</div>
+
+</div>

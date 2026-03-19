@@ -1,73 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research — Stella Yeayeun Park</title>
-  <!-- Times New Roman is a system font, no external fonts needed -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: Research
+nav: research
+description: Research publications and working papers by Stella Yeayeun Park.
+---
 
-  <header class="site-header">
-    <button class="hamburger-btn" aria-label="Menu" onclick="toggleNav()">&#9776;</button>
-    <a href="index.html" class="site-brand">
-      <img src="assets/sogang-logo.png" alt="Sogang University" class="brand-logo">
-    </a>
-    <button class="mobile-search-btn" aria-label="Search" onclick="openSearch()">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-    </button>
-    <nav class="site-nav" id="siteNav">
-      <a href="index.html">Home</a>
-      <a href="research.html" class="active">Research</a>
-      <a href="cv.html">CV</a>
-      <span class="nav-search" onclick="openSearch()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></span>
-    </nav>
-  </header>
+<h1 class="page-title">Research</h1>
 
-  <!-- Search Overlay -->
-  <div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
-    <div class="search-box" onclick="event.stopPropagation()">
-      <input type="text" id="searchInput" placeholder="Search this site" oninput="doSearch(this.value)">
-      <div class="search-results" id="searchResults"></div>
-    </div>
-  </div>
+<div class="section-heading">[Publications]</div>
 
-  <main class="page-container">
+<div class="publication">
+  Armstrong, C., Glaeser, S., Park, S.Y. and Timmermans, O. (2026), The Assignment of Intellectual Property Rights and Innovation. <em>Journal of Accounting Research</em>. <a href="https://doi.org/10.1111/1475-679x.70035" target="_blank">https://doi.org/10.1111/1475-679x.70035</a>
+</div>
 
-    <h1 class="page-title">Research</h1>
+<div class="section-heading">[Working Papers]</div>
 
-    <div class="section-heading">[Publications]</div>
+<ol class="paper-list">
+  <li>
+    "Do Retail Flows Explain the Overnight-Intraday Return Gap?" with Youngkil Ahn, Don Noh, and Alfred Qi Fan
+    <span class="status">Revise &amp; Resubmit at Journal of Financial and Quantitative Analysis</span>
+  </li>
+  <li>
+    "Disclosure and Competition for Limited Investor Resources" with Catherine Schrand and Frank Zhou
+  </li>
+  <li>
+    "Chinese Government Financing and Financial Reporting Quality" with Yanduo Chen and Yue Heng
+  </li>
+  <li>
+    "Is Disclosure Priced Ex-Ante?" with Jeremy Michels
+  </li>
+  <li>
+    "Complex Disclosures and Investor Divergence at Earnings Announcements" Solo-authored
+  </li>
+</ol>
 
-    <div class="publication">
-      Armstrong, C., Glaeser, S., Park, S.Y. and Timmermans, O. (2026), The Assignment of Intellectual Property Rights and Innovation. <em>Journal of Accounting Research</em>. <a href="https://doi.org/10.1111/1475-679x.70035" target="_blank">https://doi.org/10.1111/1475-679x.70035</a>
-    </div>
-
-    <div class="section-heading">[Working Papers]</div>
-
-    <ol class="paper-list">
-      <li>
-        "Do Retail Flows Explain the Overnight-Intraday Return Gap?" with Youngkil Ahn, Don Noh, and Alfred Qi Fan
-        <span class="status">Revise &amp; Resubmit at Journal of Financial and Quantitative Analysis</span>
-      </li>
-      <li>
-        "Disclosure and Competition for Limited Investor Resources" with Catherine Schrand and Frank Zhou
-      </li>
-      <li>
-        "Chinese Government Financing and Financial Reporting Quality" with Yanduo Chen and Yue Heng
-      </li>
-      <li>
-        "Is Disclosure Priced Ex-Ante?" with Jeremy Michels
-      </li>
-      <li>
-        "Complex Disclosures and Investor Divergence at Earnings Announcements" Solo-authored
-      </li>
-    </ol>
-
-    <a href="cv-source/cv.pdf" download="StellaYPark_CV_Mar2026.pdf" target="_blank">Download CV</a>
-
-  </main>
-
-  <script src="search.js"></script>
-</body>
-</html>
+<a href="cv-source/cv.pdf" class="download-cv" download="StellaYPark_CV_Mar2026.pdf" target="_blank">Download CV</a>
