@@ -1,0 +1,12 @@
+# To add a new publication, just add a new entry following this format:
+# - authors: "Author names"
+#   year: 2026
+#   title: "Paper title"
+#   journal: "Journal Name"
+#   url: "https://doi.org/..."
+
+- authors: "Armstrong, C., Glaeser, S., Park, S.Y. and Timmermans, O."
+  year: 2026
+  title: "The Assignment of Intellectual Property Rights and Innovation"
+  journal: "Journal of Accounting Research"
+  url: "https://doi.org/10.1111/1475-679x.70035"

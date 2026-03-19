@@ -1,0 +1,134 @@
+<div class="cv-html">
+
+  <div class="cv-header-block">
+    <h2>Stella Yeayeun Park</h2>
+    <div class="cv-contact">
+      <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a><br>
+      {{ site.data.contact.address }}
+    </div>
+  </div>
+
+  <!-- Academic Employment -->
+  <div class="cv-section">
+    <div class="cv-section-title">Academic Employment</div>
+    {% for job in site.data.cv.employment %}
+    <div class="cv-entry">
+      <div class="cv-date">{{ job.dates }}</div>
+      <div class="cv-detail">
+        <strong>{{ job.institution }}</strong><br>
+        <div class="cv-sub">{{ job.role }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Education -->
+  <div class="cv-section">
+    <div class="cv-section-title">Education</div>
+    {% for edu in site.data.cv.education %}
+    <div class="cv-entry">
+      <div class="cv-date">{{ edu.dates }}</div>
+      <div class="cv-detail">
+        <strong>{{ edu.institution }}</strong><br>
+        {% if edu.degree %}
+        <div class="cv-sub">{{ edu.degree }}</div>
+        {% endif %}
+        {% if edu.details %}
+        <div class="cv-sub"><em>{{ edu.details }}</em></div>
+        {% endif %}
+        {% if edu.degrees %}
+        {% for d in edu.degrees %}
+        <div class="cv-sub">{{ d }}</div>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Publications -->
+  <div class="cv-section">
+    <div class="cv-section-title">Publications</div>
+    {% for pub in site.data.publications %}
+    <p style="font-size:14.5px; line-height:1.65;">
+      {{ pub.authors }} ({{ pub.year }}), {{ pub.title }}. <em>{{ pub.journal }}</em>.{% if pub.url %} <a href="{{ pub.url }}" target="_blank">{{ pub.url }}</a>{% endif %}
+    </p>
+    {% endfor %}
+  </div>
+
+  <!-- Working Papers -->
+  <div class="cv-section">
+    <div class="cv-section-title">Working Papers</div>
+    <ul class="cv-item-list">
+      {% for paper in site.data.working_papers %}
+      <li>
+        "{{ paper.title }}" {{ paper.coauthors }}
+        {% if paper.status %}<span class="status">{{ paper.status }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Professional Activities -->
+  <div class="cv-section">
+    <div class="cv-section-title">Professional Activities</div>
+
+    <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Invited Conferences / Presentations</p>
+    <table class="cv-table">
+      {% for p in site.data.cv.presentations %}
+      <tr><td class="cv-year">{{ p.year }}</td><td>{{ p.venues }}</td></tr>
+      {% endfor %}
+    </table>
+
+    <p style="font-weight:600; font-size:14.5px; margin: 20px 0 10px;">Ad Hoc Reviewer</p>
+    <table class="cv-table">
+      {% for r in site.data.cv.reviewer %}
+      <tr><td class="cv-year">{{ r.year }}</td><td>{{ r.venue }}</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <!-- Teaching -->
+  <div class="cv-section">
+    <div class="cv-section-title">Teaching</div>
+
+    <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Instructor</p>
+    <table class="cv-table">
+      {% for t in site.data.cv.teaching_instructor %}
+      <tr><td class="cv-year">{{ t.year }}</td><td>{{ t.course }}</td></tr>
+      {% endfor %}
+    </table>
+
+    <p style="font-weight:600; font-size:14.5px; margin: 20px 0 10px;">Teaching Assistant</p>
+    <table class="cv-table">
+      {% for t in site.data.cv.teaching_ta %}
+      <tr><td class="cv-year">{{ t.year }}</td><td>{{ t.course }}</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <!-- Awards and Grants -->
+  <div class="cv-section">
+    <div class="cv-section-title">Awards and Grants</div>
+
+    <p style="font-weight:600; font-size:14.5px; margin-bottom:10px;">Fellowships and Grants</p>
+    <table class="cv-table">
+      {% for g in site.data.cv.grants %}
+      <tr><td class="cv-year">{{ g.year }}</td><td>{{ g.name }}</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <!-- Other Professional Experience -->
+  <div class="cv-section">
+    <div class="cv-section-title">Other Professional Experience</div>
+    <table class="cv-table">
+      {% for e in site.data.cv.experience %}
+      <tr><td class="cv-year">{{ e.year }}</td><td>{{ e.role }}</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <div class="cv-updated">Last Updated: March 2026</div>
+
+</div>

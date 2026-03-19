@@ -1,0 +1,104 @@
+# ============================================
+# CV Data — Edit this file to update your CV
+# ============================================
+
+employment:
+  - dates: "2025 –"
+    institution: "Sogang University"
+    role: "Assistant Professor of Accounting"
+  - dates: "2021 – 2025"
+    institution: "Singapore Management University"
+    role: "Assistant Professor of Accounting"
+
+education:
+  - dates: "2016 – 2021"
+    institution: "The Wharton School of the University of Pennsylvania"
+    degree: "Ph.D. in Accounting"
+    details: "(Committee: Christopher Armstrong, Mirko Heinle, Robert Holthausen, Christopher Ittner (Chair))"
+  - dates: "2010 – 2014"
+    institution: "Swarthmore College"
+    degrees:
+      - "B.A. in Computer Science"
+      - "B.A. in Economics"
+
+presentations:
+  - year: "2025"
+    venues: "EAA Congress 2025, KAA"
+  - year: "2024, 2025"
+    venues: "Hawaii Accounting Research Conference"
+  - year: "2024"
+    venues: "Sogang University"
+  - year: "2024"
+    venues: "University of Melbourne, Kiwoom Securities Co."
+  - year: "2023"
+    venues: "Quantitative Finance and Risk Analysis Symposium"
+  - year: "2023"
+    venues: "MIT Asia Conference"
+  - year: "2023"
+    venues: "KAIST"
+  - year: "2021 – 2023"
+    venues: "SOAR Accounting Symposium"
+  - year: "2022 – 2024"
+    venues: "Tri-Uni Accounting Research Conference"
+  - year: "2022"
+    venues: "SOAR Research Summer Camp"
+  - year: "2021"
+    venues: "Singapore Management University"
+  - year: "2021"
+    venues: "Hong Kong University"
+  - year: "2020 – 2021"
+    venues: "Journal of Accounting and Economics Conference"
+  - year: "2020"
+    venues: "Cornell Financial Reporting Mini-Camp"
+  - year: "2019"
+    venues: "Wharton Accounting Spring Conference, Financial Accounting and Reporting Section Midyear Meeting (FARS), UNC Tax Doctoral Seminar"
+  - year: "2018"
+    venues: "Wharton INSEAD Doctoral Consortium, University of Colorado Summer Accounting Research Conference (paper invitation), Wharton Accounting Spring Conference"
+  - year: "2017"
+    venues: "Journal of Accounting and Economics Conference, Wharton Accounting Spring Conference"
+  - year: "2016"
+    venues: "Review of Accounting Studies Conference, Wharton Accounting Spring Conference, Conference on Quantitative Empirical Research on Management Accounting"
+
+reviewer:
+  - year: "2024, 2018"
+    venue: "Hawaii Accounting Research Conference (HARC)"
+  - year: "2024, 2023"
+    venue: "European Accounting Association"
+  - year: "2023"
+    venue: "The Accounting Review"
+  - year: "2022"
+    venue: "The Accounting Review"
+  - year: "2021"
+    venue: "FARS, HARC"
+
+teaching_instructor:
+  - year: "2025"
+    course: "Managerial Accounting, Sogang University"
+  - year: "2022 – 2025"
+    course: "Statistical Programming, Singapore Management University"
+  - year: "2018"
+    course: "Managerial Accounting, Wharton School"
+
+teaching_ta:
+  - year: "2017, 2020"
+    course: "Managerial Accounting, Wharton School"
+  - year: "2017, 2019"
+    course: "EMBA Corporate Valuation (for Prof. Wayne Guay), Wharton School"
+
+grants:
+  - year: "2022"
+    name: "Singapore Ministry of Education (MOE) Tier 1 Research Grant, Singapore Management University"
+  - year: "2016 – 2021"
+    name: "Wharton School Fellowship for Doctoral Studies, Wharton School"
+  - year: "2020"
+    name: "Jacobs Levy Equity Management Center Research Grant, Wharton School"
+  - year: "2019"
+    name: "Mack Institute for Innovation Research Fellowship, Wharton School"
+
+experience:
+  - year: "2014 – 2016"
+    role: "Data Analyst, Samuel Zell Robert Lurie Real Estate Center, Wharton School"
+  - year: "2015 – 2016"
+    role: "Research Assistant, Christopher Ittner and Jeremy Michels, Wharton School"
+  - year: "2012"
+    role: "Intern, PricewaterhouseCoopers"

@@ -1,0 +1,13 @@
+# Contact info and website links — edit here to update across all pages
+email: "yeayeunpark@sogang.ac.kr"
+address: "35 Baekbeom-ro, Mapo-gu, Seoul, Korea"
+
+websites:
+  - name: "Faculty Page"
+    url: "https://yeayeun.sogang.ac.kr/yeayeun/index.html"
+  - name: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=S9VPzdkAAAAJ&hl=en"
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/stellaypark/"
+  - name: "Github"
+    url: "https://github.com/ystellapark"
