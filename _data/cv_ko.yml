@@ -1,0 +1,133 @@
+name: 박예연 (Stella Yeayeun Park)
+
+employment:
+  - dates: "2025 –"
+    institution: "서강대학교 경영대학"
+    role: "조교수 (Assistant Professor of Accounting)"
+  - dates: "2021 – 2025"
+    institution: "싱가포르경영대학교 (Singapore Management University)"
+    role: "조교수 (Assistant Professor of Accounting)"
+
+education:
+  - dates: "2016 – 2021"
+    institution: "펜실베니아 대학교 와튼스쿨 (The Wharton School, University of Pennsylvania)"
+    degree: "회계학 박사 (Ph.D. in Accounting)"
+  - dates: "2010 – 2014"
+    institution: "스와스모어 대학 (Swarthmore College)"
+    degrees:
+      - "컴퓨터 공학 학사 (B.A. in Computer Science)"
+      - "경제학 학사 (B.A. in Economics)"
+
+interests: "재무회계(Financial Accounting), 공시(Disclosure), 정보 처리(Information Processing), 계약(Contracting), 지식재산권(Intellectual Property), 혁신(Innovation)."
+interests_note: "시장 참여자가 보유·처리하는 정보가 전략적 행동에 미치는 영향과 그것이 자본시장·실물경제의 성과에 미치는 결과를 연구한다."
+
+publications:
+  - authors: "Armstrong, C., Glaeser, S., Park, S.Y. and Timmermans, O."
+    year: "2026"
+    title: "The Assignment of Intellectual Property Rights and Innovation"
+    title_ko: "지식재산권의 배분과 혁신"
+    journal: "Journal of Accounting Research (회계연구저널)"
+    url: "https://doi.org/10.1111/1475-679x.70035"
+
+dissertation:
+  - authors: "Park, S.Y."
+    year: "2021"
+    title: "Complex Disclosures and Investor Divergence at Earnings Announcements"
+    venue: "펜실베니아 대학교 박사학위논문 (ProQuest)"
+
+working_papers:
+  - title: "Do Retail Flows Explain the Overnight-Intraday Return Gap?"
+    coauthors: "(with Y. Ahn, D. Noh, A.Q. Fan)"
+    status: "Revise & Resubmit, Journal of Financial and Quantitative Analysis"
+    title_ko: "개인투자자 주문흐름이 야간-주간 수익률 격차를 설명하는가?"
+  - title: "Disclosure and Competition for Limited Investor Resources"
+    coauthors: "(with C. Schrand, F. Zhou)"
+    title_ko: "공시와 한정된 투자자 자원에 대한 경쟁"
+  - title: "Chinese Government Financing and Financial Reporting Quality"
+    coauthors: "(with Y. Chen, Y. Heng)"
+    title_ko: "중국 정부 자금조달과 재무보고 품질"
+  - title: "Is Disclosure Priced Ex-Ante?"
+    coauthors: "(with J. Michels)"
+    title_ko: "공시는 사전적으로 가격에 반영되는가?"
+
+presentations:
+  - year: "2026"
+    venues: "국제회계연구저널(JIAR) 제13차 국제학술대회"
+  - year: "2025"
+    venues: "한국회계학회 하계국제학술대회; 유럽회계학회 연차총회"
+  - year: "2024, 2025"
+    venues: "하와이 회계연구 학술대회 (Hawaii Accounting Research Conference)"
+  - year: "2024"
+    venues: "서강대학교; 멜버른대학교; 키움증권"
+  - year: "2023"
+    venues: "계량재무·리스크분석 심포지엄; MIT 아시아 컨퍼런스; 한국과학기술원(KAIST)"
+  - year: "2021 – 2023"
+    venues: "SOAR 회계 심포지엄"
+  - year: "2022 – 2024"
+    venues: "3개 대학 공동 회계연구 학술대회 (Tri-Uni)"
+  - year: "2022"
+    venues: "SOAR 리서치 서머캠프"
+  - year: "2021"
+    venues: "싱가포르경영대학교; 홍콩대학교"
+  - year: "2020 – 2021"
+    venues: "『회계·경제학저널』 컨퍼런스"
+  - year: "2020"
+    venues: "코넬 재무보고 미니캠프"
+  - year: "2019"
+    venues: "와튼 회계 봄 학술대회; 재무회계·보고 분과(FARS) 연중회의; UNC 세무 박사 세미나"
+  - year: "2018"
+    venues: "와튼-INSEAD 박사 컨소시엄; 콜로라도대학교 여름 회계연구 학술대회(논문 초청); 와튼 회계 봄 학술대회"
+  - year: "2017"
+    venues: "『회계·경제학저널』 컨퍼런스; 와튼 회계 봄 학술대회"
+  - year: "2016"
+    venues: "『회계연구리뷰』 컨퍼런스; 와튼 회계 봄 학술대회; 관리회계 정량적 실증연구 컨퍼런스"
+
+reviewer:
+  - year: "2026"
+    venue: "미국회계학회(AAA) Global Connect 연차총회"
+  - year: "2025"
+    venue: "재무회계·보고 분과 (FARS)"
+  - year: "2024"
+    venue: "하와이 회계연구 학술대회 (HARC); 유럽회계학회 (European Accounting Association)"
+  - year: "2023"
+    venue: "『회계학리뷰』 (The Accounting Review); 유럽회계학회 (European Accounting Association)"
+  - year: "2022"
+    venue: "『회계학리뷰』 (The Accounting Review)"
+  - year: "2021"
+    venue: "재무회계·보고 분과(FARS); 하와이 회계연구 학술대회(HARC)"
+  - year: "2018"
+    venue: "하와이 회계연구 학술대회 (HARC)"
+
+teaching_instructor:
+  - year: "2025"
+    course: "관리회계; 원가회계, 서강대학교"
+  - year: "2022 – 2025"
+    course: "통계 프로그래밍, 싱가포르경영대학교"
+  - year: "2018"
+    course: "관리회계, 펜실베니아 대학교 와튼스쿨"
+
+teaching_ta:
+  - year: "2017, 2020"
+    course: "관리회계, 펜실베니아 대학교 와튼스쿨"
+  - year: "2017, 2019"
+    course: "EMBA 기업가치평가 (Wayne Guay 교수), 펜실베니아 대학교 와튼스쿨"
+
+grants:
+  - year: "2025 – 2028"
+    name: "신진연구과제 (Startup Grant), 서강대학교 — 과제명: 고도화된 언어모델의 등장에 따른 기업 공시 전략의 변화"
+  - year: "2022"
+    name: "싱가포르 교육부(MOE) Tier 1 연구과제, 싱가포르경영대학교 (SGD 30,000)"
+  - year: "2021"
+    name: "Mack 혁신연구소 연구펠로십, 펜실베니아 대학교 와튼스쿨"
+  - year: "2016 – 2021"
+    name: "펜실베니아 대학교 와튼스쿨 박사과정 장학금"
+  - year: "2019 – 2020"
+    name: "Jacobs Levy 자산운용센터 연구과제, 펜실베니아 대학교 와튼스쿨"
+
+experience:
+  - year: "2014 – 2016"
+    role: "데이타/연구 애널리스트, Samuel Zell·Robert Lurie 부동산센터, 펜실베니아 대학교 와튼스쿨"
+  - year: "2015 – 2016"
+    role: "연구조교 (Christopher Ittner·Jeremy Michels 교수), 펜실베니아 대학교 와튼스쿨"
+  - year: "2012"
+    role: "감사 인턴, PwC(삼일회계법인)"
