@@ -43,12 +43,13 @@
   <!-- 학술논문 -->
   <div class="cv-section">
     <div class="cv-section-title">학술논문 / Publications</div>
+    <p style="font-weight:600; font-size:14px; margin:0 0 6px;">게재논문 / Journal Article</p>
     {% for pub in site.data.cv_ko.publications %}
     <p style="font-size:14.5px; line-height:1.65;">{{ pub.authors }} ({{ pub.year }}), {{ pub.title }}. <em>{{ pub.journal }}</em>.{% if pub.url %} <a href="{{ pub.url }}" target="_blank">{{ pub.url }}</a>{% endif %}{% if pub.title_ko %} <span style="color:#3A3A3A;">「{{ pub.title_ko }}」</span>{% endif %}</p>
     {% endfor %}
     <p style="font-weight:600; font-size:14px; margin:14px 0 6px;">박사학위논문 / Doctoral Dissertation</p>
     {% for d in site.data.cv_ko.dissertation %}
-    <p style="font-size:14.5px; line-height:1.65;">{{ d.authors }} ({{ d.year }}), {{ d.title }}. {{ d.venue }}.</p>
+    <p style="font-size:14.5px; line-height:1.65;">{{ d.authors }} ({{ d.year }}), {{ d.title }}. {{ d.venue }}.{% if d.title_ko %} <span style="color:#3A3A3A;">「{{ d.title_ko }}」</span>{% endif %}</p>
     {% endfor %}
   </div>
 
