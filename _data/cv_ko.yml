@@ -50,6 +50,9 @@ working_papers:
   - title: "Is Disclosure Priced Ex-Ante?"
     coauthors: "(공저: J. Michels)"
     title_ko: "공시는 사전적으로 가격에 반영되는가?"
+  - title: "More Detail, Less Consensus: An LLM-Based Analysis of Complex Product Disclosures and Investor Divergence"
+    coauthors: "(단독저자)"
+    title_ko: "자세함의 역설: 복잡한 제품 공시와 투자자 의견 분산에 대한 LLM 기반 분석"
 
 presentations:
   - year: "2026"
